@@ -21,7 +21,7 @@ function Check_Others(){
             $slug_use = $slug_carry;
             $update = "" . $slug_use;
             ${$update} = Puc_v4_Factory::buildUpdateChecker(
-            'http://thedevshed.com/repo/?action=get_metadata&slug=$slug_use',
+            'yourrepohere'.$slug_use,
             WP_PLUGIN_DIR."/".$key_use, //Full path to the main plugin file or functions.php.
             $slug_use       
             );
