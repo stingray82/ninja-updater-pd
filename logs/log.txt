@@ -1,0 +1,275 @@
+Array
+(
+    [admin-columns-pro/admin-columns-pro.php] => Array
+        (
+            [Name] => Admin Columns Pro
+            [PluginURI] => https://www.admincolumns.com
+            [Version] => 4.7.3
+            [Description] => Customize columns on the administration screens for post(types), users and other content. Filter and sort content, and edit posts directly from the posts overview. All via an intuitive, easy-to-use drag-and-drop interface.
+            [Author] => AdminColumns.com
+            [AuthorURI] => https://www.admincolumns.com
+            [TextDomain] => codepress-admin-columns
+            [DomainPath] => /languages/
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 5.6.20
+            [Title] => Admin Columns Pro
+            [AuthorName] => AdminColumns.com
+        )
+
+    [ac-addon-acf/ac-addon-acf.php] => Array
+        (
+            [Name] => Admin Columns Pro - Advanced Custom Fields (ACF)
+            [PluginURI] => https://www.admincolumns.com
+            [Version] => 2.5.5
+            [Description] => Supercharges Admin Columns Pro with very cool ACF columns.
+            [Author] => Admin Columns
+            [AuthorURI] => https://www.admincolumns.com
+            [TextDomain] => codepress-admin-columns
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Admin Columns Pro - Advanced Custom Fields (ACF)
+            [AuthorName] => Admin Columns
+        )
+
+    [advanced-cron-manager/advanced-cron-manager.php] => Array
+        (
+            [Name] => Advanced Cron Manager
+            [PluginURI] => 
+            [Version] => 2.3.10
+            [Description] => View, pause, remove, edit and add WP Cron events.
+            [Author] => BracketSpace
+            [AuthorURI] => https://bracketspace.com
+            [TextDomain] => advanced-cron-manager
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Advanced Cron Manager
+            [AuthorName] => BracketSpace
+        )
+
+    [advanced-custom-fields-pro/acf.php] => Array
+        (
+            [Name] => Advanced Custom Fields PRO
+            [PluginURI] => https://www.advancedcustomfields.com
+            [Version] => 5.8.7
+            [Description] => Customize WordPress with powerful, professional and intuitive fields.
+            [Author] => Elliot Condon
+            [AuthorURI] => https://www.advancedcustomfields.com
+            [TextDomain] => acf
+            [DomainPath] => /lang
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Advanced Custom Fields PRO
+            [AuthorName] => Elliot Condon
+        )
+
+    [akismet/akismet.php] => Array
+        (
+            [Name] => Akismet Anti-Spam
+            [PluginURI] => https://akismet.com/
+            [Version] => 4.1.3
+            [Description] => Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
+            [Author] => Automattic
+            [AuthorURI] => https://automattic.com/wordpress-plugins/
+            [TextDomain] => akismet
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Akismet Anti-Spam
+            [AuthorName] => Automattic
+        )
+
+    [custom-post-type-ui/custom-post-type-ui.php] => Array
+        (
+            [Name] => Custom Post Type UI
+            [PluginURI] => https://github.com/WebDevStudios/custom-post-type-ui/
+            [Version] => 1.7.2
+            [Description] => Admin panel for creating custom post types and custom taxonomies in WordPress
+            [Author] => WebDevStudios
+            [AuthorURI] => https://webdevstudios.com/
+            [TextDomain] => custom-post-type-ui
+            [DomainPath] => /languages
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Custom Post Type UI
+            [AuthorName] => WebDevStudios
+        )
+
+    [force-plugin-updates-check/force-plugin-updates-check.php] => Array
+        (
+            [Name] => Force Plugin Updates Check
+            [PluginURI] => 
+            [Version] => 1.0.2
+            [Description] => Adds a link to the toolbar that allows site admins to force WordPress to run a check for plugin updates
+            [Author] => Pippin Williamson
+            [AuthorURI] => http://pippinsplugins.com
+            [TextDomain] => force-plugin-updates-check
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Force Plugin Updates Check
+            [AuthorName] => Pippin Williamson
+        )
+
+    [hello.php] => Array
+        (
+            [Name] => Hello Dolly
+            [PluginURI] => http://wordpress.org/plugins/hello-dolly/
+            [Version] => 1.7.2
+            [Description] => This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly</cite> in the upper right of your admin screen on every page.
+            [Author] => Matt Mullenweg
+            [AuthorURI] => http://ma.tt/
+            [TextDomain] => 
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Hello Dolly
+            [AuthorName] => Matt Mullenweg
+        )
+
+    [Ninja_Updater/ninja-updater.php] => Array
+        (
+            [Name] => Ninja-Updater
+            [PluginURI] => 
+            [Version] => 0.1
+            [Description] => 
+            [Author] => Wordpressninja.co.uk
+            [AuthorURI] => https://wordpressninja.co.uk
+            [TextDomain] => Ninja_Updater
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Ninja-Updater
+            [AuthorName] => Wordpressninja.co.uk
+        )
+
+    [page-generator-pro/page-generator-pro.php] => Array
+        (
+            [Name] => Page Generator Pro
+            [PluginURI] => http://www.wpzinc.com/plugins/page-generator-pro
+            [Version] => 2.4.3
+            [Description] => Generate multiple Pages, Posts and Custom Post Types, using dynamic content selected from a number of sources.
+            [Author] => WP Zinc
+            [AuthorURI] => http://www.wpzinc.com
+            [TextDomain] => page-generator-pro
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Page Generator Pro
+            [AuthorName] => WP Zinc
+        )
+
+    [pods/init.php] => Array
+        (
+            [Name] => Pods - Custom Content Types and Fields
+            [PluginURI] => https://pods.io/
+            [Version] => 2.7.16.2
+            [Description] => Pods is a framework for creating, managing, and deploying customized content types and fields
+            [Author] => Pods Framework Team
+            [AuthorURI] => https://pods.io/about/
+            [TextDomain] => pods
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Pods - Custom Content Types and Fields
+            [AuthorName] => Pods Framework Team
+        )
+
+    [pretty-link/pretty-link.php] => Array
+        (
+            [Name] => Pretty Links Developer Edition
+            [PluginURI] => https://prettylinks.com/pl/plugin-uri
+            [Version] => 3.0.10
+            [Description] => Shrink, track and share any URL on the Internet from your WordPress website!
+            [Author] => Blair Williams
+            [AuthorURI] => http://blairwilliams.com
+            [TextDomain] => pretty-link
+            [DomainPath] => 
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Pretty Links Developer Edition
+            [AuthorName] => Blair Williams
+        )
+
+    [project-huddle/project-huddle.php] => Array
+        (
+            [Name] => ProjectHuddle
+            [PluginURI] => http://projecthuddle.com
+            [Version] => 3.8.11
+            [Description] => A Design Collaboration and Feedback Tool Powered By WordPress
+            [Author] => Andre Gagnon
+            [AuthorURI] => http://projecthuddle.com
+            [TextDomain] => project-huddle
+            [DomainPath] => languages
+            [Network] => 
+            [RequiresWP] => 3.8
+            [RequiresPHP] => 
+            [Title] => ProjectHuddle
+            [AuthorName] => Andre Gagnon
+        )
+
+    [ph-file-uploads/ph-file-uploads.php] => Array
+        (
+            [Name] => ProjectHuddle — File Uploads Addon
+            [PluginURI] => 
+            [Version] => 1.0.7
+            [Description] => Adds file upload capabilities to ProjectHuddle
+            [Author] => Andre Gagnon
+            [AuthorURI] => http://projecthuddle.io
+            [TextDomain] => ph-file-uploads
+            [DomainPath] => languages
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => ProjectHuddle — File Uploads Addon
+            [AuthorName] => Andre Gagnon
+        )
+
+    [ph-pdf-mockups/ph-pdf-mockups.php] => Array
+        (
+            [Name] => ProjectHuddle — PDF Mockups Addon
+            [PluginURI] => 
+            [Version] => 1.0.3
+            [Description] => Adds pdf capabilities to ProjectHuddle mockups.
+            [Author] => Andre Gagnon
+            [AuthorURI] => http://projecthuddle.io
+            [TextDomain] => ph-pdf-mockups
+            [DomainPath] => languages
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => ProjectHuddle — PDF Mockups Addon
+            [AuthorName] => Andre Gagnon
+        )
+
+    [wp-smush-pro/wp-smush.php] => Array
+        (
+            [Name] => Smush Pro
+            [PluginURI] => http://premium.wpmudev.org/projects/wp-smush-pro/
+            [Version] => 3.4.1
+            [Description] => Reduce image file sizes, improve performance and boost your SEO using the <a href="https://premium.wpmudev.org/">WPMU DEV</a> WordPress Smush API.
+            [Author] => WPMU DEV
+            [AuthorURI] => https://premium.wpmudev.org/
+            [TextDomain] => wp-smushit
+            [DomainPath] => /languages/
+            [Network] => 
+            [RequiresWP] => 
+            [RequiresPHP] => 
+            [Title] => Smush Pro
+            [AuthorName] => WPMU DEV
+        )
+
+)
