@@ -1,9 +1,14 @@
 <?php
 /*
- * Plugin name: Ninja-Updater
- * Author: Nathan Foley
- * Author URI: https://github.com/stingray82 / https://www.wordpressninja.co.uk
- * Version: 0.1.2
+
+ * Plugin name: ninja-updater
+
+ * Author: Wordpressninja.co.uk / Nathan Foley
+
+ * Author URI: https://wordpressninja.co.uk
+
+ * Version: 0.1.8
+
  */
 
 // This works with The location of your ZIP File repo using: https://github.com/YahnisElsts/wp-update-server
@@ -43,7 +48,7 @@ function Check_Themes(){
             $theme = $find_theme;
             $update = rand() . $theme;
             ${$update} = Puc_v4_Factory::buildUpdateChecker(
-            'Your_Server_Goes_Here'.$theme,
+            //'Your_Server_Goes_Here'.$theme,
             get_theme_root()."/".$theme, //Full path to the main plugin file or functions.php.
             $theme       
             );

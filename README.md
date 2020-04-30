@@ -1,4 +1,4 @@
-# Ninja Updater - Wordpress Plugin Updater V0.1.2
+# Ninja Updater - Wordpress Plugin Updater V0.1.8
 
 A simple WordPress plugin to allow single access to update themes and plugins.
 
@@ -63,6 +63,7 @@ Once installed and activated you should be able to check for updates in the plug
 - Experiment with authorisation and api’s
 - Speed Improvements
 - Confirm automatic self-updating works
+- Fix overridge of Wordpress.org
 
 
 
