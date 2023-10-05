@@ -4,23 +4,35 @@
 * Description: A custom updater that prioritizes updates from WordPress.org and plugin authors unless explicitly overwritten to check a private repo.
 * Author: Nathan Foley / Thanet.Digital
 * Author URI: https://thanet.digital
-* Version: 1.15
+* Version: 1.17
+* Icon: https://repo.thanetdigital.dev/icon.png
+* Update URI: https://repo.thanetdigital.dev/
 */
 
 // Require Update checker
 require dirname(__FILE__) . '/updates/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 // Define your custom update server URL here
-$custom_server_url = 'REPOGOESHERE';
+$custom_server_url = 'XXXXXX';
 
 // Define your custom SVG icon data here (base64-encoded)
 $custom_svg_icon_data = 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI2cHgiIHdpZHRoPSIyNnB4IiB2ZXJzaW9uPSIxLjEiIGlkPSJfeDMxXyIgdmlld0JveD0iMCAwIDMwMyAyNTYiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBpZD0iX3gzM18iIGQ9Ik0yOTUuMywxMzAuMmMtMTUuNC00LjgtMTcuMi0xMy41LTIyLjctMTguOGMtMTEuNy0xMS43LTI3LjEtMS40LTMzLjIsMy40Yy02LjYtMzcuNC0zMy41LTY1LjEtODMuMi02NS4xICBjLTU4LjIsMC04NS4zLDM4LjEtODUuMyw4NS4zczI4LDExMS45LDg1LjMsMTExLjlzODUuMy02NC42LDg1LjMtMTExLjljMC0wLjUsMC0xLjEsMC0xLjZjMTAuNSwzLDExLjIsMTQuOSwxMS4yLDE0LjkgIHMwLDI0LjEsMjEuMywyNC4xYy03LjgtMTQuNC0yLjgtMjEuOC0yLjgtMjkuM2MwLTQuOC0xLjYtOC4zLTMuNy0xMS4yQzI3Mi44LDEzNS43LDI4NC43LDE0MS4yLDI5NS4zLDEzMC4yeiBNMjIxLjIsMTQ1LjUgIGMwLDExLjctOS42LDIxLjUtMjEuMywyNC4xYy01LDEuMS0yNC41LDIuOC00NCwyLjhsMCwwbDAsMGMtMTkuNSwwLTM5LTEuNi00NC0yLjhjLTExLjctMi4zLTIxLjMtMTIuMi0yMS4zLTI0LjF2LTYgIGMwLTYsNS0xMC41LDEwLjUtMTAuNWMxOC42LDAsMjUuNCw1LjMsNTQuNiw1LjNzMzYtNS4zLDU0LjYtNS4zYzUuNSwwLDEwLjUsNC44LDEwLjUsMTAuNXY2SDIyMS4yeiI+PC9wYXRoPgo8cGF0aCBpZD0iX3gzMl9fMV8iIGQ9Ik0xMzYuOSwxNTcuOWMtMC41LDAtMC43LDAtMS40LTAuMmwtMzAuMy0xMWMtMi4xLTAuNy0zLjItMy0yLjMtNWMwLjctMi4xLDMtMy4yLDUtMi4zbDMwLjMsMTEgIGMyLjEsMC43LDMuMiwzLDIuMyw1QzE0MC4xLDE1NywxMzguNSwxNTcuOSwxMzYuOSwxNTcuOXoiPjwvcGF0aD4KPHBhdGggaWQ9Il94MzJfIiBkPSJNMTc1LjEsMTU3LjljLTEuNiwwLTMuMi0xLjEtMy43LTIuOGMtMC43LTIuMSwwLjItNC40LDIuMy01bDMwLjMtMTFjMi4xLTAuNyw0LjQsMC4yLDUsMi4zICBjMC43LDIuMS0wLjIsNC40LTIuMyw1bC0zMC4zLDExQzE3Ni4zLDE1Ny45LDE3NS44LDE1Ny45LDE3NS4xLDE1Ny45eiI+PC9wYXRoPgo8cGF0aCBpZD0iX3gzMV9fMV8iIGQ9Ik05MC41LDQ4LjZjLTIuMS0yLjEtNS4zLTIuMS03LjYsMGwtNi42LDYuNkwyOS42LDhjLTMtMy03LjYtMy0xMC4zLDBMMTEsMTYuMmMtMywzLTMsNy42LDAsMTAuM2w0Ni44LDQ2LjggIEw1MS4xLDgwYy0yLjEsMi4xLTIuMSw1LjMsMCw3LjZjMS4xLDEuNCwyLjMsMS44LDMuNywxLjhzMi44LTAuNSwzLjctMS42bDYuNi02LjZsOS40LDkuNGMwLjctMS42LDEuNi0zLjQsMi4zLTVsLTgtOEw4MCw2Ni4yICBsNi4yLDYuMmMxLjEtMS40LDIuMy0yLjgsMy43LTMuOWwtNi02bDYuNi02LjZDOTIuNiw1My44LDkyLjYsNTAuNiw5MC41LDQ4LjZ6IE0zNS44LDMzLjJIMjUuMlYyMi43aDEwLjVWMzMuMnogTTQ5LjEsNDYuNUgzOC41VjM2ICBoMTAuNVY0Ni41eiBNNTEuNiw1OS44VjQ5LjNoMTAuNXYxMC41SDUxLjZ6Ij48L3BhdGg+Cjwvc3ZnPg=='; // Replace with your SVG data
 
-// Hook the Check_Plugins and Check_Themes functions to admin_init action
-add_action('admin_init', 'Check_Plugins');
-add_action('admin_init', 'Check_Themes');
+// Hook the ninja_updater_check_plugins and ninja_updater_check_themes functions to admin_init action
+add_action('plugins_loaded', 'ninja_updater_check_plugins');
+add_action('plugins_loaded', 'ninja_updater_check_themes');
 
-function Check_Plugins() {
+
+// Activation hook
+register_activation_hook(__FILE__, 'ninja_updater_schedule_tasks');
+// Deactivation hook
+register_deactivation_hook(__FILE__, 'ninja_updater_deactivate');
+add_action( 'ninja_updater_check_plugins', 'ninja_updater_check_plugins' );
+add_action( 'ninja_updater_check_themes', 'ninja_updater_check_themes' );
+
+
+
+function ninja_updater_check_plugins() {
     // Get all installed plugins
     include_once(ABSPATH . 'wp-admin/includes/plugin.php'); // Include plugin.php to access get_plugins() function
     $plugins = get_plugins();
@@ -49,7 +61,9 @@ function Check_Plugins() {
                 // If an update is found on your custom server, allow it
                 ${$plugin_file} = PucFactory::buildUpdateChecker(
                     $custom_server_url . '?action=get_metadata&slug=' . $plugin_data['TextDomain'],
-                    WP_PLUGIN_DIR . '/' . $plugin_file
+                    WP_PLUGIN_DIR . '/' . $plugin_file,
+                    0
+
                 );
             }
         }
@@ -194,7 +208,7 @@ function ninja_updater_themes_page() {
     <?php
 }
 
-function Check_Themes() {
+function ninja_updater_check_themes() {
     // Retrieve selected themes
     $selected_themes = get_option('ninja_updater_selected_themes', array());
 
@@ -217,7 +231,8 @@ function Check_Themes() {
             // If an update is found on your custom server, allow it
             ${$theme_folder} = PucFactory::buildUpdateChecker(
                 $custom_server_url . '?action=get_metadata&slug=' . $theme_folder,
-                get_theme_root() . '/' . $theme_folder
+                get_theme_root() . '/' . $theme_folder,
+                0
             );
         }
     }
@@ -298,4 +313,59 @@ function check_for_custom_theme_update($slug, $custom_server_url) {
     // If there was an error or no update info found, return false
     return false;
 }
+
+function ninja_custom_cron_schedule( $schedules ) {
+    $schedules['every_six_hours'] = array(
+        'interval' => 21600, // Every 6 hours
+        'display'  => __( 'Every 6 hours' ),
+    );
+    return $schedules;
+}
+add_filter( 'cron_schedules', 'ninja_custom_cron_schedule' );
+
+function ninja_updater_schedule_tasks() {
+    error_log('ninja_updater_schedule_tasks has been executed at ' . date('Y-m-d H:i:s')); // Add this line for debugging
+
+    if (!wp_next_scheduled('ninja_updater_check_updates')) {
+        // Schedule plugin check every 6 hours
+        wp_schedule_event(time(), 'every_six_hours', 'Ninja_Check_Updates');
+    }
+
+
+}
+// On Deactivate
+function ninja_updater_deactivate() {
+    // Remove the scheduled events for checking plugins and themes
+    wp_clear_scheduled_hook('ninja_updater_check_updates');
+}
+
+fuction Ninja_Check_Updates () {
+$updateChecker->checkForUpdates()
+}
+
+add_action('admin_init', 'check_current_admin_page');
+
+function check_current_admin_page() {
+    // Check if the user is an administrator
+    if (current_user_can('administrator')) {
+        // Get the current admin page URL
+        $current_page = isset($_SERVER['REQUEST_URI']) ? esc_url($_SERVER['REQUEST_URI']) : '';
+
+        // List of allowed admin pages where you want to run Ninja_Check_Updates
+        $allowed_admin_pages = array(
+            'plugins.php',
+            'update-core.php',
+            'index.php',
+            'admin.php?page=ninja-updater-plugins', // This is for the Ninja Updater settings page
+        );
+
+        // Check if the current admin page URL matches any of the allowed pages
+        if (in_array($current_page, $allowed_admin_pages)) {
+            // Run your function on the specified admin pages
+            Ninja_Check_Updates();
+        }
+    }
+}
+
+
 ?>
